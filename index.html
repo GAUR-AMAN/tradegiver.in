@@ -3,17 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Trade Giver – Free XAUUSD, Forex, Crypto and Indian Market trading community. Open an account through our trusted broker partners and join for free." />
-  <meta name="keywords" content="trade giver, free trading community, XAUUSD, forex, crypto, Indian market, Kotak Neo, Dhan, Vantage, Exness, telegram trading" />
+  <meta name="description" content="Trade Giver – Free XAUUSD, Forex and Crypto trading community. Open an account through our trusted broker partners and join for free." />
+  <meta name="keywords" content="trade giver, free trading community, XAUUSD, gold trading, forex, crypto, Kotak Neo, Dhan, Vantage, Exness, telegram trading" />
   <meta property="og:title" content="Trade Giver – Free Trading Community" />
-  <meta property="og:description" content="Open a trading account through our referral links and join our FREE Telegram community for Gold, Forex, Crypto and Indian Market calls." />
+  <meta property="og:description" content="Open a trading account through our referral links and join our FREE Telegram community for Gold, Forex and Crypto calls." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://tradegiver.in" />
   <title>Trade Giver – Free Trading Community</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230A0A0A'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-size='18' fill='%23C9A84C'>₿</text></svg>" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230A0A0A'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-size='18' fill='%23FFD700'>₿</text></svg>" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -31,9 +28,9 @@
   <!-- LOADING SCREEN -->
   <div id="loader" aria-hidden="true">
     <div class="loader-inner">
-      <svg class="loader-logo" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <polyline points="5,45 15,30 25,38 35,18 45,26 55,10" stroke="#C9A84C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-        <circle cx="55" cy="10" r="3" fill="#C9A84C"/>
+      <svg class="loader-logo" viewBox="0 0 60 60" fill="none">
+        <polyline points="5,45 15,30 25,38 35,18 45,26 55,10" stroke="#FFD700" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="55" cy="10" r="3" fill="#FFD700"/>
       </svg>
       <span class="loader-text">TRADE GIVER</span>
       <div class="loader-bar"><div class="loader-fill"></div></div>
@@ -51,8 +48,8 @@
     <div class="nav-container">
       <a href="#hero" class="nav-logo" aria-label="Trade Giver Home">
         <svg width="22" height="22" viewBox="0 0 60 60" fill="none">
-          <polyline points="5,45 15,30 25,38 35,18 45,26 55,10" stroke="#C9A84C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="55" cy="10" r="4" fill="#C9A84C"/>
+          <polyline points="5,45 15,30 25,38 35,18 45,26 55,10" stroke="#FFD700" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="55" cy="10" r="4" fill="#FFD700"/>
         </svg>
         TRADE GIVER
       </a>
@@ -82,9 +79,9 @@
       </div>
       <h1 class="hero-title reveal-up delay-2">
         <span class="title-line">TRADE</span>
-        <span class="title-line gold">GIVER</span>
+        <span class="title-line accent">GIVER</span>
       </h1>
-      <p class="hero-sub reveal-up delay-3">Free XAUUSD &nbsp;·&nbsp; Forex &nbsp;·&nbsp; Crypto &nbsp;·&nbsp; Indian Market</p>
+      <p class="hero-sub reveal-up delay-3">Free XAUUSD &nbsp;·&nbsp; Forex &nbsp;·&nbsp; Crypto</p>
       <p class="hero-desc reveal-up delay-4">Open your trading account through our trusted broker partners, submit your Broker ID, and unlock access to our <em>free</em> Telegram trading community.</p>
       <div class="hero-cta reveal-up delay-5">
         <a href="#brokers" class="btn btn-primary ripple">Open Trading Account</a>
@@ -93,7 +90,7 @@
       <div class="hero-stats reveal-up delay-6">
         <div class="stat"><span class="stat-num" data-target="2000">0</span><span class="stat-label">Members</span></div>
         <div class="stat-divider"></div>
-        <div class="stat"><span class="stat-num" data-target="4">0</span><span class="stat-label">Markets</span></div>
+        <div class="stat"><span class="stat-num" data-target="3">0</span><span class="stat-label">Markets</span></div>
         <div class="stat-divider"></div>
         <div class="stat"><span class="stat-num" data-target="4">0</span><span class="stat-label">Brokers</span></div>
       </div>
@@ -101,15 +98,32 @@
     <div class="hero-chart-wrap reveal-right delay-3" aria-hidden="true">
       <div class="chart-card">
         <div class="chart-header">
-          <span class="chart-pair">XAU/USD</span>
-          <span class="chart-price" id="goldPrice">2,634.50</span>
-          <span class="chart-change up">+0.84%</span>
+          <div class="chart-pair-wrap">
+            <span class="chart-dot"></span>
+            <span class="chart-pair">XAU / USD</span>
+          </div>
+          <div class="chart-price-wrap">
+            <span class="chart-price" id="goldPrice">2,634.50</span>
+            <span class="chart-change up" id="goldChange">▲ +0.84%</span>
+          </div>
         </div>
-        <canvas id="heroChart" width="340" height="160"></canvas>
+        <canvas id="heroChart" width="360" height="170"></canvas>
         <div class="chart-footer">
-          <span>EUR/USD &nbsp; 1.0882 <em class="up">▲</em></span>
-          <span>BTC/USD &nbsp; 68,240 <em class="up">▲</em></span>
-          <span>NIFTY &nbsp; 24,530 <em class="dn">▼</em></span>
+          <div class="cf-item">
+            <span class="cf-label">EUR/USD</span>
+            <span class="cf-val">1.0882</span>
+            <span class="cf-chg up">▲</span>
+          </div>
+          <div class="cf-item">
+            <span class="cf-label">BTC/USD</span>
+            <span class="cf-val">68,240</span>
+            <span class="cf-chg up">▲</span>
+          </div>
+          <div class="cf-item">
+            <span class="cf-label">ETH/USD</span>
+            <span class="cf-val">3,810</span>
+            <span class="cf-chg up">▲</span>
+          </div>
         </div>
       </div>
     </div>
@@ -123,7 +137,7 @@
   <section id="why-us" aria-labelledby="why-heading">
     <div class="container">
       <div class="section-label reveal-up">Why Choose Us</div>
-      <h2 id="why-heading" class="section-title reveal-up delay-1">Everything you need<br/><span class="gold">in one community</span></h2>
+      <h2 id="why-heading" class="section-title reveal-up delay-1">Everything you need<br/><span class="accent">in one community</span></h2>
       <div class="why-grid">
         <div class="why-card reveal-card" tabindex="0">
           <div class="why-icon">🆓</div>
@@ -133,7 +147,7 @@
         <div class="why-card reveal-card" tabindex="0">
           <div class="why-icon">🥇</div>
           <h3>Gold (XAUUSD)</h3>
-          <p>Daily high-probability setups on Gold with clear entry, SL & targets.</p>
+          <p>Daily high-probability setups on Gold with clear entry, SL &amp; targets.</p>
         </div>
         <div class="why-card reveal-card" tabindex="0">
           <div class="why-icon">💱</div>
@@ -146,9 +160,9 @@
           <p>BTC, ETH and altcoin setups for both spot and futures traders.</p>
         </div>
         <div class="why-card reveal-card" tabindex="0">
-          <div class="why-icon">🇮🇳</div>
-          <h3>Indian Market</h3>
-          <p>NSE/BSE equity ideas, Nifty, Bank Nifty and option strategies.</p>
+          <div class="why-icon">📊</div>
+          <h3>Daily Analysis</h3>
+          <p>In-depth market breakdown every morning before the session opens.</p>
         </div>
         <div class="why-card reveal-card" tabindex="0">
           <div class="why-icon">🤝</div>
@@ -163,7 +177,7 @@
   <section id="brokers" aria-labelledby="brokers-heading">
     <div class="container">
       <div class="section-label reveal-up">Broker Partners</div>
-      <h2 id="brokers-heading" class="section-title reveal-up delay-1">Choose your broker,<br/><span class="gold">open &amp; earn access</span></h2>
+      <h2 id="brokers-heading" class="section-title reveal-up delay-1">Choose your broker,<br/><span class="accent">open &amp; earn access</span></h2>
       <div class="brokers-grid">
 
         <!-- KOTAK NEO -->
@@ -172,8 +186,8 @@
           <div class="broker-top">
             <div class="broker-logo-wrap">
               <svg viewBox="0 0 48 48" fill="none" class="broker-logo-svg">
-                <rect width="48" height="48" rx="12" fill="#C9A84C" opacity=".15"/>
-                <text x="50%" y="57%" dominant-baseline="middle" text-anchor="middle" font-size="20" fill="#C9A84C" font-weight="700">KN</text>
+                <rect width="48" height="48" rx="12" fill="#FFD700" opacity=".12"/>
+                <text x="50%" y="57%" dominant-baseline="middle" text-anchor="middle" font-size="16" fill="#FFD700" font-weight="700" font-family="Helvetica,Arial,sans-serif">KN</text>
               </svg>
             </div>
             <div>
@@ -183,12 +197,10 @@
           </div>
           <p class="broker-desc">Zero-brokerage equity delivery, advanced algo tools, and seamless API integration for automated strategies on NSE/BSE.</p>
           <ul class="broker-tags">
-            <li>Zero Delivery Brokerage</li>
-            <li>Algo Trading</li>
-            <li>NSE / BSE</li>
+            <li>Zero Brokerage</li><li>Algo Trading</li><li>NSE / BSE</li>
           </ul>
           <!-- KOTAK_REFERRAL_LINK → replace # below -->
-          <a href="#" class="btn btn-gold ripple broker-btn" target="_blank" rel="noopener noreferrer">Open Account →</a>
+          <a href="#" class="btn btn-outline ripple broker-btn" target="_blank" rel="noopener noreferrer">Open Account →</a>
         </article>
 
         <!-- DHAN -->
@@ -197,8 +209,8 @@
           <div class="broker-top">
             <div class="broker-logo-wrap">
               <svg viewBox="0 0 48 48" fill="none" class="broker-logo-svg">
-                <rect width="48" height="48" rx="12" fill="#C9A84C" opacity=".15"/>
-                <text x="50%" y="57%" dominant-baseline="middle" text-anchor="middle" font-size="20" fill="#C9A84C" font-weight="700">DH</text>
+                <rect width="48" height="48" rx="12" fill="#2563EB" opacity=".15"/>
+                <text x="50%" y="57%" dominant-baseline="middle" text-anchor="middle" font-size="16" fill="#60A5FA" font-weight="700" font-family="Helvetica,Arial,sans-serif">DH</text>
               </svg>
             </div>
             <div>
@@ -208,12 +220,10 @@
           </div>
           <p class="broker-desc">Modern trading platform with fast order execution, advanced charts, and a smooth experience for equity, F&amp;O and mutual funds.</p>
           <ul class="broker-tags">
-            <li>Fast Execution</li>
-            <li>F&amp;O Trading</li>
-            <li>Mutual Funds</li>
+            <li>Fast Execution</li><li>F&amp;O Trading</li><li>Mutual Funds</li>
           </ul>
           <!-- DHAN_REFERRAL_LINK → replace # below -->
-          <a href="#" class="btn btn-gold ripple broker-btn" target="_blank" rel="noopener noreferrer">Open Account →</a>
+          <a href="#" class="btn btn-outline ripple broker-btn" target="_blank" rel="noopener noreferrer">Open Account →</a>
         </article>
 
         <!-- VANTAGE -->
@@ -222,23 +232,21 @@
           <div class="broker-top">
             <div class="broker-logo-wrap">
               <svg viewBox="0 0 48 48" fill="none" class="broker-logo-svg">
-                <rect width="48" height="48" rx="12" fill="#C9A84C" opacity=".15"/>
-                <text x="50%" y="57%" dominant-baseline="middle" text-anchor="middle" font-size="20" fill="#C9A84C" font-weight="700">VM</text>
+                <rect width="48" height="48" rx="12" fill="#FFD700" opacity=".12"/>
+                <text x="50%" y="57%" dominant-baseline="middle" text-anchor="middle" font-size="16" fill="#FFD700" font-weight="700" font-family="Helvetica,Arial,sans-serif">VM</text>
               </svg>
             </div>
             <div>
               <h3 class="broker-name">Vantage</h3>
-              <span class="broker-category">Forex Traders (India)</span>
+              <span class="broker-category">Forex Traders</span>
             </div>
           </div>
-          <p class="broker-desc">Regulated international broker offering tight spreads on Forex and Gold (XAUUSD) with MT4/MT5 support for Indian traders.</p>
+          <p class="broker-desc">Regulated international broker offering tight spreads on Forex and Gold (XAUUSD) with MT4/MT5 support for global traders.</p>
           <ul class="broker-tags">
-            <li>MT4 / MT5</li>
-            <li>XAUUSD</li>
-            <li>Tight Spreads</li>
+            <li>MT4 / MT5</li><li>XAUUSD</li><li>Tight Spreads</li>
           </ul>
           <!-- VANTAGE_REFERRAL_LINK → replace # below -->
-          <a href="#" class="btn btn-gold ripple broker-btn" target="_blank" rel="noopener noreferrer">Open Account →</a>
+          <a href="#" class="btn btn-outline ripple broker-btn" target="_blank" rel="noopener noreferrer">Open Account →</a>
         </article>
 
         <!-- EXNESS -->
@@ -247,8 +255,8 @@
           <div class="broker-top">
             <div class="broker-logo-wrap">
               <svg viewBox="0 0 48 48" fill="none" class="broker-logo-svg">
-                <rect width="48" height="48" rx="12" fill="#C9A84C" opacity=".15"/>
-                <text x="50%" y="57%" dominant-baseline="middle" text-anchor="middle" font-size="20" fill="#C9A84C" font-weight="700">EX</text>
+                <rect width="48" height="48" rx="12" fill="#2563EB" opacity=".15"/>
+                <text x="50%" y="57%" dominant-baseline="middle" text-anchor="middle" font-size="16" fill="#60A5FA" font-weight="700" font-family="Helvetica,Arial,sans-serif">EX</text>
               </svg>
             </div>
             <div>
@@ -258,12 +266,10 @@
           </div>
           <p class="broker-desc">Global multi-asset broker with instant withdrawals, high leverage, and access to Forex, Gold, Crypto and commodities worldwide.</p>
           <ul class="broker-tags">
-            <li>Instant Withdrawal</li>
-            <li>Crypto &amp; Forex</li>
-            <li>Global Access</li>
+            <li>Instant Withdrawal</li><li>Crypto &amp; Forex</li><li>Global Access</li>
           </ul>
           <!-- EXNESS_REFERRAL_LINK → replace # below -->
-          <a href="#" class="btn btn-gold ripple broker-btn" target="_blank" rel="noopener noreferrer">Open Account →</a>
+          <a href="#" class="btn btn-outline ripple broker-btn" target="_blank" rel="noopener noreferrer">Open Account →</a>
         </article>
 
       </div>
@@ -274,18 +280,16 @@
   <section id="how-it-works" aria-labelledby="hiw-heading">
     <div class="container">
       <div class="section-label reveal-up">Process</div>
-      <h2 id="hiw-heading" class="section-title reveal-up delay-1">Six steps to<br/><span class="gold">free access</span></h2>
+      <h2 id="hiw-heading" class="section-title reveal-up delay-1">Six steps to<br/><span class="accent">free access</span></h2>
       <div class="timeline">
-
         <div class="tl-item reveal-tl">
           <div class="tl-num">01</div>
           <div class="tl-connector"></div>
           <div class="tl-body">
             <h3>Choose Broker</h3>
-            <p>Pick the broker that best fits your trading style — Indian markets, Forex or global assets.</p>
+            <p>Pick the broker that best fits your trading style — Forex, Gold or global crypto assets.</p>
           </div>
         </div>
-
         <div class="tl-item reveal-tl">
           <div class="tl-num">02</div>
           <div class="tl-connector"></div>
@@ -294,7 +298,6 @@
             <p>Click the referral button on this page and register. Using our link is mandatory for verification.</p>
           </div>
         </div>
-
         <div class="tl-item reveal-tl">
           <div class="tl-num">03</div>
           <div class="tl-connector"></div>
@@ -303,7 +306,6 @@
             <p>After registration, find your unique Broker User ID / Client ID from your broker dashboard.</p>
           </div>
         </div>
-
         <div class="tl-item reveal-tl">
           <div class="tl-num">04</div>
           <div class="tl-connector"></div>
@@ -312,7 +314,6 @@
             <p>Submit your name, broker name, and User ID using the secure Google Form below.</p>
           </div>
         </div>
-
         <div class="tl-item reveal-tl">
           <div class="tl-num">05</div>
           <div class="tl-connector"></div>
@@ -321,15 +322,13 @@
             <p>Our team verifies your submission within 24 hours. You'll receive a confirmation message.</p>
           </div>
         </div>
-
         <div class="tl-item reveal-tl last">
-          <div class="tl-num gold">06</div>
+          <div class="tl-num accent">06</div>
           <div class="tl-body">
             <h3>Join FREE Telegram Community 🎉</h3>
-            <p>Get your invite link and start receiving daily Gold, Forex, Crypto and Indian market opportunities.</p>
+            <p>Get your invite link and start receiving daily Gold, Forex and Crypto trade opportunities.</p>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -338,14 +337,14 @@
   <section id="register" aria-labelledby="register-heading">
     <div class="container">
       <div class="section-label reveal-up">Registration</div>
-      <h2 id="register-heading" class="section-title reveal-up delay-1">Submit your<br/><span class="gold">Broker Details</span></h2>
+      <h2 id="register-heading" class="section-title reveal-up delay-1">Submit your<br/><span class="accent">Broker Details</span></h2>
       <p class="section-sub reveal-up delay-2">After opening your account through our referral link, submit your Broker User ID using the form below. Verification takes up to 24 hours.</p>
       <div class="form-wrap reveal-up delay-3">
         <!-- GOOGLE_FORM_EMBED → paste your Google Form iframe code here -->
         <div class="form-placeholder">
           <svg width="48" height="48" fill="none" viewBox="0 0 24 24" aria-hidden="true">
-            <rect x="4" y="3" width="16" height="18" rx="2" stroke="#C9A84C" stroke-width="1.5"/>
-            <path d="M8 8h8M8 12h8M8 16h5" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
+            <rect x="4" y="3" width="16" height="18" rx="2" stroke="#FFD700" stroke-width="1.5"/>
+            <path d="M8 8h8M8 12h8M8 16h5" stroke="#FFD700" stroke-width="1.5" stroke-linecap="round"/>
           </svg>
           <p><strong>Google Form Embed</strong></p>
           <p class="form-placeholder-hint">Paste your Google Form <code>&lt;iframe&gt;</code> embed code here in <code>index.html</code> inside <code>.form-placeholder</code></p>
@@ -361,15 +360,14 @@
       <div class="tg-card reveal-up">
         <div class="tg-glow" aria-hidden="true"></div>
         <div class="tg-icon" aria-hidden="true">
-          <svg viewBox="0 0 48 48" width="56" height="56"><circle cx="24" cy="24" r="24" fill="#229ED9" opacity=".15"/><path d="M10 23.5l22-9.5-3 18-7-6-4 4v-5l12-11-13 8-7-4z" fill="#229ED9"/></svg>
+          <svg viewBox="0 0 48 48" width="60" height="60"><circle cx="24" cy="24" r="24" fill="#229ED9" opacity=".15"/><path d="M10 23.5l22-9.5-3 18-7-6-4 4v-5l12-11-13 8-7-4z" fill="#229ED9"/></svg>
         </div>
-        <h2 id="tg-heading">Join Our FREE<br/><span class="gold">Telegram Community</span></h2>
+        <h2 id="tg-heading">Join Our FREE<br/><span class="accent">Telegram Community</span></h2>
         <p class="tg-desc">Daily market analysis and trade opportunities across all major asset classes:</p>
         <div class="tg-markets">
           <span>🥇 XAUUSD Gold</span>
           <span>💱 Forex</span>
           <span>₿ Crypto</span>
-          <span>🇮🇳 Indian Market</span>
         </div>
         <!-- TELEGRAM_LINK → replace # below -->
         <a href="#" class="btn btn-primary btn-lg ripple" target="_blank" rel="noopener noreferrer">Join Telegram →</a>
@@ -382,7 +380,7 @@
   <section id="faq" aria-labelledby="faq-heading">
     <div class="container">
       <div class="section-label reveal-up">FAQ</div>
-      <h2 id="faq-heading" class="section-title reveal-up delay-1">Common<br/><span class="gold">Questions</span></h2>
+      <h2 id="faq-heading" class="section-title reveal-up delay-1">Common<br/><span class="accent">Questions</span></h2>
       <div class="faq-list reveal-up delay-2" role="list">
 
         <div class="faq-item" role="listitem">
@@ -421,7 +419,7 @@
             <span class="faq-icon" aria-hidden="true">+</span>
           </button>
           <div class="faq-a">
-            <p>We currently support four brokers: <strong>Kotak Neo</strong> (Indian algo traders), <strong>Dhan</strong> (Indian investors), <strong>Vantage</strong> (Forex India) and <strong>Exness</strong> (international traders). More brokers may be added in the future.</p>
+            <p>We currently support four brokers: <strong>Kotak Neo</strong> (algo traders), <strong>Dhan</strong> (investors), <strong>Vantage</strong> (Forex) and <strong>Exness</strong> (international traders). More brokers may be added in the future.</p>
           </div>
         </div>
 
@@ -444,8 +442,8 @@
     <div class="container">
       <div class="disclaimer-box reveal-up">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <circle cx="12" cy="12" r="10" stroke="#C9A84C" stroke-width="1.5"/>
-          <path d="M12 8v4M12 16h.01" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="12" cy="12" r="10" stroke="#FFD700" stroke-width="1.5"/>
+          <path d="M12 8v4M12 16h.01" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>
         </svg>
         <div>
           <h3 id="disc-heading">Risk Disclaimer</h3>
@@ -462,12 +460,12 @@
         <div class="footer-brand">
           <a href="#hero" class="nav-logo" aria-label="Trade Giver">
             <svg width="20" height="20" viewBox="0 0 60 60" fill="none">
-              <polyline points="5,45 15,30 25,38 35,18 45,26 55,10" stroke="#C9A84C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="55" cy="10" r="4" fill="#C9A84C"/>
+              <polyline points="5,45 15,30 25,38 35,18 45,26 55,10" stroke="#FFD700" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="55" cy="10" r="4" fill="#FFD700"/>
             </svg>
             TRADE GIVER
           </a>
-          <p class="footer-tagline">Free XAUUSD · Forex · Crypto · Indian Market Community</p>
+          <p class="footer-tagline">Free XAUUSD · Forex · Crypto Community</p>
           <p class="footer-domain">tradegiver.in</p>
         </div>
         <div class="footer-links">
